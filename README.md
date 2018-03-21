@@ -95,10 +95,10 @@ in Section 4.1 of ESaaS). You can also use the key :as to specify a name to gene
 + a controller method to receive the click
 on "Find With Same Director", and grab the id (for example) of the movie
 that is the subject of the match (i.e. the one we're trying to find
-movies similar to) 
+movies similar to); Note: This implies that you should write at least 2 specs for your controller: 1) When the specified movie has a director, it should...  2) When the specified movie has no director, it should ...
 
 + a model method in the Movie model to find movies
-whose director matches that of the current movie. Note: This implies that you should write at least 2 specs for your controller: 1) When the specified movie has a director, it should...  2) When the specified movie has no director, it should ... and 2 for your model: 1) it should find movies by the same director and 2) it should not find movies by different directors.
+whose director matches that of the current movie; Note: This implies that you should write at least 2 specs for your model: 1) it should find movies by the same director and 2) it should not find movies by different directors.
 
 It's up to you to
 decide whether you want to handle the sad path of "no director" in the
